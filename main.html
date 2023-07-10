@@ -36,10 +36,10 @@
   </header>
 
   <section class="main">
-    <div class="container">
+    <div class="container main__container-offset">
       <div class="row">
         <div class="col-lg-8 main__text">
-          <h1 class="main__title animate__animated animate__fadeIn animate__delay-1s">Пора перевести твой проект <br class="main__title-br">
+          <h1 class="main__title animate__animated animate__fadeIn">Пора перевести твой проект <br class="main__title-br">
            <span class="main__title-spot">в яркий режим</span></h1>
         </div>
         <div class="col-lg-4">
@@ -66,8 +66,82 @@
     </div>
   </section>
 
+  <section class="project">
+    <div class="project__wrapper d-flex">
+      <div class="project__container">
+        <div class="row justify-content-center">
+          <div class="col-lg-1 d-flex flex-column justify-content-center">
 
-  sc
+            <input class="project__checkbox" type="checkbox" name="check" id="page1" checked>
+            <label for="page1" class="checkbox__label"></label>
 
+            <input class="project__checkbox" type="checkbox" name="check" id="page2">
+            <label for="page2" class="checkbox__label"></label>
+
+            <input class="project__checkbox" type="checkbox" name="check" id="page3">
+            <label for="page3" class="checkbox__label"></label>
+
+            <input class="project__checkbox" type="checkbox" name="check" id="page4">
+            <label for="page4" class="checkbox__label"></label>
+          </div>
+          <div class="col-lg-7 projectbg ">
+            <div class="project__cover d-flex ">
+              <img src="./img/qiwishopcover.png" alt="QIWISHOP" class="project__cover-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-dsc__container">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#" class="project__navigation d-flex">
+              <img class="project__navigation-img" src="./img/arrowup.png" alt="UP">
+              <span class="project__navigation-text">
+                Вернуться на&nbsp;главную
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row project-dsc">
+          <div class="col-lg-9">
+            <h3 class="project-dsc__suptitle">
+              Баннер для темы на форуме + аватар
+            </h3>
+            <h2 class="project-dsc__title">
+              Шоп Qiwi-кошельков
+            </h2>
+            <p class="project-dsc__subtitle">
+              Оформление выполнено в фиолетовых
+              тонах с использованием мягких
+              градиентных шейпов
+            </p>
+            <div class="project-dsc__developer-wrap d-flex align-items-center justify-content-between">
+              <div class="project-dsc__developer">
+                designed by tinkott
+              </div>
+              <img src="./img/watermark.png" alt="Tinkott" class="project-dsc__developer-watermark">
+            </div>
+
+            <div class="project-dsc__progress">
+              <span class="project-dsc__progress-text">Design, Development</span>
+              <span class="project-dsc__progress-page">Page 1/4</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#" class="project__navigation d-flex">
+              <img class="project__navigation-img" src="./img/arrowdown.png" alt="UP">
+              <span class="project__navigation-text">
+                Почитать&nbsp;о <br> каждом из нас
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
 </body>
 </html>
