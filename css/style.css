@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'ALS Hauss';
+  src: url('../fonts/ALSHauss-Regular.woff2') format('woff2'),
+  url('../fonts/ALSHauss-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ALS Hauss';
+  src: url('../fonts/ALSHauss-Bold.woff2') format('woff2'),
+  url('../fonts/ALSHauss-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ALS Hauss';
+  src: url('../fonts/ALSHauss-Medium.woff2') format('woff2'),
+  url('../fonts/ALSHauss-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {font-family: "ALS Gorizont Variable"; src: url("//db.onlinewebfonts.com/t/51148dedef2c8ef3ba08d21f3cc7bb06.eot"); src: url("//db.onlinewebfonts.com/t/51148dedef2c8ef3ba08d21f3cc7bb06.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/51148dedef2c8ef3ba08d21f3cc7bb06.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/51148dedef2c8ef3ba08d21f3cc7bb06.woff") format("woff"), url("//db.onlinewebfonts.com/t/51148dedef2c8ef3ba08d21f3cc7bb06.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/51148dedef2c8ef3ba08d21f3cc7bb06.svg#ALS Gorizont Variable") format("svg"); }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: ALS Hauss, sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1410px;
+}
+
+.header {
+  padding: 40px 0;
+  background-color: #121212;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.header__nav-link {
+  color: #C3C3C3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__btn {
+  padding: 7px 25px;
+  border-radius: 100px;
+  background: #D9D9D9;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__btn-text {
+  margin-right: 41px;
+}
+
+.main {
+  background-color: #121212;
+}
+
+.main__text {
+  padding-top: 320px;
+  padding-bottom: 320px;
+}
+
+.main__title {
+  position: relative;
+  color: #FFF;
+  font-family: ALS Gorizont Variable, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main__title-spot {
+  position: absolute;
+  top: 74px;
+  left: -22px;
+  padding: 5px 25px;
+  color: black;
+  border-radius: 15px;
+  background: #D9D9D9;
+  z-index: 10;
+}
+
+.main__title-spot::before {
+  content: '';
+  position: absolute;
+  border: 15px #D9D9D9 solid;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 15px;
+  z-index: 1;
+  filter: blur(15px);
+  animation: spotBlindingBorder normal 2s linear infinite;
+}
+
+@keyframes spotBlindingBorder {
+  0% {
+    border-left: 5px #D9D9D9 solid;
+    border-right: 5px #D9D9D9 solid;
+    border-bottom: 5px #D9D9D9 solid;
+    border-top: 5px #D9D9D9 solid;
+  }
+
+  50% {
+    border-right: 8px #D9D9D9 solid;
+    border-left: 8px #D9D9D9 solid;
+    border-bottom: 15px #D9D9D9 solid;
+    border-top: 5px #D9D9D9 solid;
+  }
+
+  70% {
+    border-right: 15px #D9D9D9 solid;
+    border-left: 15px #D9D9D9 solid;
+    border-bottom: 15px #D9D9D9 solid;
+    border-top: 15px #D9D9D9 solid;
+  }
+
+  100% {
+    border-left: 5px #D9D9D9 solid;
+    border-right: 5px #D9D9D9 solid;
+    border-bottom: 5px #D9D9D9 solid;
+    border-top: 5px #D9D9D9 solid;
+    }
+
+}
+
+.main__img-wrap {
+  position: relative;
+}
+
+.main__img-wrap::after {
+  content: url("../img/gitbehance.png");
+  position: absolute;
+  right: 23px;
+  bottom: 45px;
+}
+
+
+.main__img {
+  position: relative;
+  overflow: hidden;
+  left: -53px;
+  top: 126px;
+}
+
+.main__subtitle-pos {
+  position: relative;
+}
+
+.main__subtitle {
+  position: absolute;
+  bottom: 45px;
+  left: 14px;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.main__subtitle-scroll {
+  margin-right: 27px;
+  animation: scrollDown normal 2s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+
+}
